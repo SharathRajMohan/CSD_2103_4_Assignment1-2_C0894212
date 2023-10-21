@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* */
+footer {
+    background-image: url('https://images.pexels.com/photos/3678799/pexels-photo-3678799.jpeg?cs=srgb&dl=pexels-laura-meinhardt-3678799.jpg&fm=jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#primary {
+    flex: 80%;
+    padding: 20px;
+    /* background-color: #f4f4f4; */
+    background-image:url('https://images.unsplash.com/photo-1558865869-c93f6f8482af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#secondary {
+    flex: 20%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    background-image: url('https://static.greatbigcanvas.com/images/square/raygun/2403670.jpg?max=800');
+}
+
+/* Responsive Styling */
+
+@media screen and (max-width: 992px) {
+    #primary, #secondary {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem 0;
+    }
+
+    #primary, #secondary {
+        padding: 10px;
+    }
+}
+
+/* Navigation Bar in Header */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Footer section socials link */
+
+.socials {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between each icon */
+}
+
+.socials a {
+    text-decoration: none;
+    color: black;
+    transition: opacity 0.3s ease;
+}
+
+.socials img {
+    width: 24px; /* Adjust this value as necessary */
+    height: 24px; /* Adjust this value as necessary */
+}
+
+.socials a:hover {
+    opacity: 0.7;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: aqua;
+    color: black;
+  }
+
+  input, select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
